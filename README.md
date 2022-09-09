@@ -300,6 +300,22 @@ Então, tudo isso requer que os dados fluam do componente parao modelo ou evento
 
 Interação entre o component e o template:
 
+## Aplicativos de Página Unica (Single Page Applications)
+
+Design SPA using Angular
+
+Use the Angular router module to construct SPA
+
+Um aplicativo de página única é um aplicativo web ou um site que se encaixa em uma única página. Você não
+precisa recarregar a página toda vez que um usuario interage com o aplicativo.
+A UX é mais como um desktop ou um aplicativo nativo.
+A maioria dos recursos necessários para o aplicativo são baixados na primeira instância, com o carregamento da primeira página.
+
+Depois disso apenas parte das páginas são redesenhadas  com base na interação do usuário, e isso acontece sem exigir que seja dado 
+uma ida e volta no servidor.
+
+
+
 
 ## Referencias
 

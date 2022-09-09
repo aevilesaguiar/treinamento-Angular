@@ -315,7 +315,8 @@ Interação entre o component e o template:
 - http://codenugget.co/2015/03/05/declarative-vs-imperative-programming-web.html
 - https://github.com/angular/flex-layout/wiki/Using-Angular-CLI
 - https://www.macoratti.net/18/06/ang_diret1.htm
-
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+- https://developer.mozilla.org/en-US/docs/Web/API/History_API#Adding_and_modifying_history_entries
 
 
 

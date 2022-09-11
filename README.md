@@ -315,6 +315,20 @@ Depois disso apenas parte das páginas são redesenhadas  com base na interaçã
 uma ida e volta no servidor.
 
 
+## ActivedRoute Service
+
+Essa lib facilita a recuperação de parâmetros.
+
+O serviço ActivedRoute fornece três coisas diferentes.
+Fornece acesso a informações sobre uma rota associada a um componente carregado em uma tomada. 
+Use para percorrer a RouterStateárvore e extrair informações dos nós.
+
+é aqui que a biblioteca do Angular Router forneceum serviço chamado como o serviço ActivatedRoute.Este serviço ActivatedRoute pode ser aproveitado para poder recuperar esses valores. Agora, em particular, para facilitar essa recuperação de parâmetros,o serviço ActivatedRoute fornece três coisas diferentes:
+
+- url: um Observable de um caminho(path) de um rota, representada como um array de strings para cada caminho de rota. ActivedRoute fornece um Observable.
+- params: (o serviço ActivesRoute também fornece outro Observable chamado params)disponibiliza para um componente os valores
+de parametros que estão sendo passdos como o parametro route. Então esse parametro Observable é aquele que vamos usar para recuperar esse valor dentro do component.
+- queryParams(parametros de consulta): podemos passar parametros de consulta para outro componente. Um Observable que contaim o parametro de consulta avalia todas as rotas.
 
 
 ## Referencias

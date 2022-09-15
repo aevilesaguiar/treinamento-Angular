@@ -351,4 +351,7 @@ de parametros que estão sendo passdos como o parametro route. Então esse param
 
 
 
+<<<<<<< HEAD
 - teste
+=======
+>>>>>>> 7c391ba36625d709111eefd266a910795e92af7d

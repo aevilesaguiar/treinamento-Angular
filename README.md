@@ -331,6 +331,21 @@ de parametros que estão sendo passdos como o parametro route. Então esse param
 - queryParams(parametros de consulta): podemos passar parametros de consulta para outro componente. Um Observable que contaim o parametro de consulta avalia todas as rotas.
 
 
+## Angular Template- driven Forms
+
+- formularios orientados a modelos
+
+imports:
+- agrupa itens de formulário
+import { MatFormFieldModule} from '@angular/material/form-field'
+- suporta o campo de formulario input HTML
+import { MatInputModule} from '@angular/material/input'
+- suporta checkbox
+import { MatCheckboxModule} from '@angular/material/checkbox';
+- suporta formulários orientados por modelo em angular
+import { FormsModule} from '@angular/forms';
+
+
 ## Referencias
 
 - https://github.com/angular/flex-layout

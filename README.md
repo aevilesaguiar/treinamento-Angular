@@ -376,6 +376,11 @@ facilmente se o número de caracteresdentro de um campo é aproximadamente o com
 máximo, e assim por diante.
 
 ![image](https://user-images.githubusercontent.com/52088444/191496569-91eeb57e-e662-431b-b095-26fd4a92ec34.png)
+  
+  Da mesma forma, para campos específicos,você pode verificar se o campo foi preenchido ou não.Portanto, se você especificar que um campo específico é obrigatório especificando o atributo obrigatório para o campo de entrada,então você pode verificar para ver se há um erro deo tipo necessário gerado para o elemento de campo específico lá.
+  Então, no seu código, por exemplo,você pode até especificar para informar o usuário sobreo fato de que um determinado campo está incorreto.Você usa o erro mat para significar isso.Então, a tag mat-error, que vem de,novamente, o suporte de forma de material Angular como você vê aqui,se o ngIf for verdadeiro,então essa mensagem será exibida abaixo no campo de entrada,e semelhante ao campo de entrada,será marcado em vermelho na tela.Então, isso é algo que você vai verificar egarantindo e também entregando mensagens de erro ao usuário.
+
+  ![image](https://user-images.githubusercontent.com/52088444/191497491-810abdc4-b6c9-4cc2-9b5e-de9b4c90bd5c.png)
 
 
 ## Referencias

@@ -354,6 +354,29 @@ Mas quando usamos Angular na nossa aplicação temos que desativar a validação
 para que a responsabilidade seja transferida para o Aplicativo Angular. Incluimos o atributo <form novalidate>
 
 
+![image](https://user-images.githubusercontent.com/52088444/191495280-12db9075-9576-4bdc-bfce-75b2d665518a.png)
+
+Nesse caso, o formulário de login e o nome de usuário são todas variáveis de referência de modelo.
+Essas variáveis de referência de modelo podem ser usadas dentro do nosso modelo Angular para fazer referência a esses campos.
+Então, no próprio modelo,você pode verificar os estados de controle para esses campos, incluindo coisas como se o campo é válido,
+ou tem alguns erros.
+
+## Control States
+
+![image](https://user-images.githubusercontent.com/52088444/191495878-a8536e71-5817-4724-8fa3-af6dc6392147.png)
+
+vamos aproveitaras variáveis de referência do modelo para reunir o estado de controle para verificar as informações.Assim, 
+por exemplo, você pode dizer username.pristine dentro do seu template.Então, isso se refere à verificação do estado,se o 
+controle específico está no estado original,significando que não foi tocado e modificado pelo usuário até agora.O sujo
+é o oposto do puro,o que significa que quando um campo está sujo,isso significa que o campo foi modificado pelo usuário no passado.
+Assim, por exemplo, você pode verificar se declarou um campo como obrigatório,isso significa que você esperava que o usuário para digitar
+pelo menos algumas informações no campo. A ausência de informações no campo em seu formulário significa que o campo é inválido.
+Da mesma forma, você pode especificar o o comprimento máximo de um valor de campo,para que você possa verificar 
+facilmente se o número de caracteresdentro de um campo é aproximadamente o comprimento principal,ou abaixo do comprimento
+máximo, e assim por diante.
+
+![image](https://user-images.githubusercontent.com/52088444/191496569-91eeb57e-e662-431b-b095-26fd4a92ec34.png)
+
 
 ## Referencias
 

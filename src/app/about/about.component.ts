@@ -12,7 +12,7 @@ import { LeaderService } from '../services/leader.service';
 })
 export class AboutComponent implements OnInit {
 
-  leader: Leader;
+  leaders: Leader[];
 
   constructor(private leaderservice: LeaderService,
     private route: ActivatedRoute,
@@ -21,7 +21,6 @@ export class AboutComponent implements OnInit {
      //é assim que as URLs para esses componentes serão definidas
   ngOnInit(): void {
     const id=this.route.snapshot.params['id'];
-    this.leader=this.leaderservice.getLeader(id);
   }
 
   goBack():void{

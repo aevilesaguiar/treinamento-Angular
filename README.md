@@ -382,6 +382,37 @@ máximo, e assim por diante.
 
   ![image](https://user-images.githubusercontent.com/52088444/191497491-810abdc4-b6c9-4cc2-9b5e-de9b4c90bd5c.png)
 
+## Validando a entrada em formulários orientados por modelo
+
+Para adicionar validação a um formulário orientado por modelo, você adiciona os mesmos atributos de validação que faria com
+validação de formulário HTML nativo
+. Angular usa diretivas para combinar esses atributos com funções validadoras na estrutura.
+
+Toda vez que o valor de um controle de formulário é alterado, o Angular executa a validação e gera uma lista de erros de validação que resulta em um INVALID status ou null, que resulta em um status VALID.
+
+Você pode então inspecionar o estado do controle exportando ngModelpara uma variável de modelo local. O exemplo a seguir exporta NgModelpara uma variável chamada name:
+<input type="text" id="name" name="name" class="form-control"
+      required minlength="4" appForbiddenName="bob"
+      [(ngModel)]="hero.name" #name="ngModel">
+
+<div *ngIf="name.invalid && (name.dirty || name.touched)"
+    class="alert">
+
+  <div *ngIf="name.errors?.['required']">
+    Name is required.
+  </div>
+  <div *ngIf="name.errors?.['minlength']">
+    Name must be at least 4 characters long.
+  </div>
+  <div *ngIf="name.errors?.['forbiddenName']">
+    Name cannot be Bob.
+  </div>
+
+</div>
+
+ex: https://angular.io/guide/form-validation
+
+
 
 ## Referencias
 

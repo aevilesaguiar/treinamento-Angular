@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { Leader } from '../shared/leader';
 import { LEADERS } from '../shared/leaders';
 
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -22,6 +25,8 @@ export class LeaderService {
   getNameLeader(): Leader{
     return LEADERS.filter((leader)=>(leader.name))[0];
   }
+
+
 
 
 }

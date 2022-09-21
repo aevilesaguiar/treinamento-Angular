@@ -346,6 +346,15 @@ import { MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule} from '@angular/forms';
 
 
+
+## Angular form validation
+
+HTML5 já vem com algum suporte incorporado para a validação de formulários.
+Mas quando usamos Angular na nossa aplicação temos que desativar a validação de formulário HTML5,
+para que a responsabilidade seja transferida para o Aplicativo Angular. Incluimos o atributo <form novalidate>
+
+
+
 ## Referencias
 
 - https://github.com/angular/flex-layout

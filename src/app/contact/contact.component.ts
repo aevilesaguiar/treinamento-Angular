@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Feedback, ContactType } from '../shared/feedback';
 
@@ -14,44 +14,43 @@ feedbackForm: FormGroup;
 
 feedback: Feedback;//mas tarde esse valor pode ser obtido a partir de um servidor dentro da nossa aplicação
 contactType = ContactType;
+//essa anottation nos permitirá ter acesso a qualquer um dos elemntos do DOM dentro da minha view
+@ViewChild('fform') feedbackFormDirective;
 
 
   constructor(private fb: FormBuilder) {
-    this.creatForm();
 
   }
 
   ngOnInit(): void {
   }
 
-  creatForm(){
-    this.feedbackForm=this.fb.group({
+  createForm() {
+    this.feedbackForm = this.fb.group({
+      firstname: ['', Validators.required ],
+      lastname: ['', Validators.required ],
+      telnum: ['', Validators.required ],
+      email: ['', Validators.required ],
+      agree: false,
+      contacttype: 'None',
+      message: ''
+    });
+  }
+  onSubmit() {
+    this.feedback = this.feedbackForm.value;
+    console.log(this.feedback);
+    this.feedbackForm.reset({
       firstname: '',
       lastname: '',
-      telnum: 0,
+      telnum: '',
       email: '',
-      agree: true,
-      contacttipe:'None',
+      agree: false,
+      contacttype: 'None',
       message: ''
-    })
-
+    });
+    this.feedbackFormDirective.resetForm();
   }
 
-  onSubmit(){
-    //value permite recuperar o valor atual
-    //feedbackForm.value; mapeio para o objeto js feedback
-    //se analisarmos feedback e  e feedbackForm ambos tem a mesma estrutura o modelo de dados
-    //e o modelo de formulário, por isso que eu carrego  rapidamente o valor diretamente no modelo de dados
-    //quando o ususario envia o formulário
-    this.feedback = this.feedbackForm.value;
 
-      //só para confirmar que o form foi enviado corretamente
-      console.log(this.feedback);
-
-      //o método reset permite que vc redefina o form para seu estado normal
-      //removendo todas as entrads que vc fez
-      this.feedbackForm.reset();
-
-  }
 
 }

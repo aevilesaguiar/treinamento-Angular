@@ -454,7 +454,9 @@ Aplicando os validadores podemos inspecionar as propriedades de controle para de
 ![image](https://user-images.githubusercontent.com/52088444/191755143-8fa744aa-ba85-4bc2-9b9b-7901bc7f3635.png)
 
 
+## Promises
 
+Uma promise é um proxy para 
 
 ## Referencias
 

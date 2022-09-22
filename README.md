@@ -413,6 +413,40 @@ Você pode então inspecionar o estado do controle exportando ngModelpara uma va
 ex: https://angular.io/guide/form-validation
 
 
+## Reactive Forms
+
+Os formulários reativos fornecem uma abordagem baseada em modelo para lidar com entradas de formulário cujos valores mudam ao longo do tempo.
+
+Os formulários reativos usam uma abordagem explícita e imutável para gerenciar o estado de um formulário em um determinado momento. Cada alteração no estado do formulário retorna um novo estado, que mantém a integridade do modelo entre as alterações. Formulários reativos são construídos em torno de fluxos observáveis , onde entradas e valores de formulários são fornecidos como fluxos de valores de entrada, que podem ser acessados ​​de forma síncrona.
+
+Os formulários reativos também fornecem um caminho direto para o teste, pois você tem certeza de que seus dados são consistentes e previsíveis quando solicitados. Quaisquer consumidores dos fluxos têm acesso para manipular esses dados com segurança.
+
+Os formulários reativos diferem dos formulários orientados por modelo de maneiras distintas. Os formulários reativos fornecem acesso síncrono ao modelo de dados, imutabilidade com operadores observáveis ​​e rastreamento de alterações por meio de fluxos observáveis.
+
+Os formulários orientados por modelo permitem que o acesso direto modifique os dados em seu modelo, mas são menos explícitos do que os formulários reativos porque dependem de diretivas incorporadas ao modelo, juntamente com dados mutáveis ​​para rastrear alterações de forma assíncrona.
+
+sobre formulários: https://angular.io/guide/forms-overview
+
+Os formulários Reactives são suportados para algumas classes que estão disponíveis para biblioteca de formulários angular.
+Um deles é a classe :
+
+- FormControl: que alimenta o controle de forma individual e também permite rastrear o valor desses limites e fazer validação desse elemento. 
+- FormControl: group de FormControl , portanto quando você deseja organizar FormControls juntos como um grupo e em seguida rastrear informações sobre esses grupos como um todo , então o FormGroup aglomerar um grupo de FormGroup.
+- Abstract Control: que é um resumo da classe baseada para classes FormControl, que também pode ser usado para nossa vantagem.
+- FormArray: permite que você defina uma matriz numericamente indexaa de instancias AbstractControl.
+
+FormBuilder: permite o uso para criar formulários dentro do nosso código typescript e em seguida ser capaz de amarrá-los com os controles de modelo. Para usar a classe FormBuilder você importa a partir dos forms do angular. E em seguida voc~e pode usar o contrutor de formulário.
+
+## Populando Form Model
+
+- Form Model e Data Model são separados;
+- Todas as alterações que você fizer nos elementos DOM fluirão para o modelo de formulário
+e você tem que refletir explicitamente os dados do formulário de volta para esse modelo de dados;
+- Dois métodos polulares para popular(preencher) o form model (modelo de formulário) a partir de um modelo de dados:
+    - setValue(): que nos permite atribuir  cada controle de formulário a um valor específico do modelo de dados ;
+    - patchValue():permite atualizar apenas alguns controles dentro do seu modelo de formulário. Assim que voc~e obter o delo de dados do backend, do modelo de dados você pode aplicar os valores em seu modelo de formulário ou mapear os valores do seu modelo de dados em seu modelo de formulário, muitas vezes vamos criar o modelo de dados, que espelha de perto a estrutura do formulário.
+
+
 
 ## Referencias
 

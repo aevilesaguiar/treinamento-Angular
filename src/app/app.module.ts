@@ -16,6 +16,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select'
+import { MatSlideToggleModule } from '@angular/material/slide-toggle'
+
+
 
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
@@ -63,7 +68,10 @@ import { PromotionService } from './services/promotion.service';
     MatFormFieldModule,
     FormsModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+    MatSlideToggleModule 
 
 
   ],

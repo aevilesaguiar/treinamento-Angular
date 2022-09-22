@@ -447,6 +447,14 @@ e você tem que refletir explicitamente os dados do formulário de volta para es
     - patchValue():permite atualizar apenas alguns controles dentro do seu modelo de formulário. Assim que voc~e obter o delo de dados do backend, do modelo de dados você pode aplicar os valores em seu modelo de formulário ou mapear os valores do seu modelo de dados em seu modelo de formulário, muitas vezes vamos criar o modelo de dados, que espelha de perto a estrutura do formulário.
 
 
+Validadores utilizando FormBuilder
+
+Aplicando os validadores podemos inspecionar as propriedades de controle para descobrir se há erros;
+
+![image](https://user-images.githubusercontent.com/52088444/191755143-8fa744aa-ba85-4bc2-9b9b-7901bc7f3635.png)
+
+
+
 
 ## Referencias
 

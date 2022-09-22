@@ -456,8 +456,17 @@ Aplicando os validadores podemos inspecionar as propriedades de controle para de
 
 ## Promises
 
-Uma promise é um proxy para 
+Uma promise é um proxy para algo que vai acontecer no futuro ou pode nunca acontecer.
+  
+  ![image](https://user-images.githubusercontent.com/52088444/191767096-6c62ae31-897e-4eb5-9f7c-94c2977420c6.png)
 
+  ![image](https://user-images.githubusercontent.com/52088444/191767500-2f981cbe-356c-4051-8512-7b41c68d0439.png)
+
+Uma das vantagens de usar Promises é que elas podem ser alteradas 
+ Se o resultado estiver disponível ou se for rejeitar, então promise fornece um método de retornar imediatamente sem esperar.
+  ![image](https://user-images.githubusercontent.com/52088444/191768749-55c5e115-0105-441e-a630-6eb3c0385996.png)
+
+  
 ## Referencias
 
 - https://github.com/angular/flex-layout
